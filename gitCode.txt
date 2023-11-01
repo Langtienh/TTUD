@@ -1,0 +1,18 @@
+echo "# TTUD" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Langtienh/TTUD.git
+git push -u origin main
+
+git remote add capnhat https://github.com/Langtienh/TTUD.git
+git branch -M main
+git push -u origin main
+
+git add .
+git commit -m "Update"
+git push -u origin main
+
+git config --unset-all push.autosetupremote
+git config --global push.autosetupremote true
